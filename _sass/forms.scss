@@ -1,0 +1,18 @@
+@import "variables";
+
+input[type="text"], input[type="email"], input[type="url"], textarea {
+  padding: 0.25em;
+  font-size: inherit;
+  width: 95%;
+
+  &:active, &:focus {
+    outline-color: $orange;
+  }
+}
+
+input[type="submit"] {
+  font-family: metric;
+  border: 0;
+  letter-spacing: 1px;
+  cursor: pointer;
+}

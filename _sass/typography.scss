@@ -1,0 +1,98 @@
+@import "variables";
+
+@font-face {
+  font-family:"Metric";
+  src: url("https://iaccstatic.s3.amazonaws.com/static/fonts/Metric-Regular.otf");
+}
+
+@font-face{
+  font-family: "Metric";
+  src: url("https://iaccstatic.s3.amazonaws.com/static/fonts/Metric-RegularItalic.otf");
+  font-style: italic;
+}
+
+@font-face{
+  font-family: "Metric";
+  src: url("https://iaccstatic.s3.amazonaws.com/static/fonts/Metric-Black.otf");
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: "Metric-Black";
+  src: url("https://iaccstatic.s3.amazonaws.com/static/fonts/Metric-Black.otf");
+}
+
+@font-face{
+  font-family: "Metric-Black";
+  src: url("https://iaccstatic.s3.amazonaws.com/static/fonts/Metric-BlackItalic.otf");
+  font-style: italic;
+}
+
+body {
+  font-family: Metric;
+  color: #231f20;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.h1, h1 {
+  font-size: 3.99em;
+}
+
+.h2, h2 {
+  font-size: 2.82em;
+}
+
+.h3, h3 {
+  font-weight: normal;
+  font-size: 1.99em;
+}
+
+.h4, h4 {
+  font-weight: normal;
+  font-size: 1.41em;
+}
+
+.h5, h5 {
+  font-size: 1em;
+}
+
+.black {
+  color: $black;
+}
+
+.orange {
+  color: $orange;
+}
+
+.blue {
+  color: $blue;
+}
+
+.light-gray {
+  color: $light-gray;
+}
+
+.gray {
+  color: $gray;
+}
+
+.dark-gray {
+  color: $dark-gray;
+}
+
+.white {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: $blue;
+  }
+}

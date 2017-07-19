@@ -1,0 +1,19 @@
+@import "variables";
+@import "typography";
+
+.container {
+  padding: 0 1em;
+}
+
+.unit-detail-body {
+  .hero {
+    min-height: 600px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+
+    @media (max-width: 599px) {
+      min-height: 300px;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+<nav class="header">
+  <div class="container flex">
+    <div class="flex-shrink flex items-center">
+      <a href="/">
+        <img src="http://edenaresorts.com/images/logo_small.png" class="logo" alt="OrganizeFor Logo"/>
+      </a>
+    </div>
+    <div class="flex-auto"></div>
+    <div class="flex-auto right-align xs-hide sm-hide flex items-center">
+      <div class="flex-auto"></div>
+      <div>
+        <ul>
+          <li class="nav h5 caps bold">
+            <a href="#" style="letter-spacing: 1px;">Book Now</a>
+          </li>
+          <li class="nav h5">
+            <a href="#">Room Types</a>
+          </li>
+          <li class="nav h5">
+            <a href="#">What We Do</a>
+          </li>
+          <li class="nav h5">
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex-none md-hide lg-hide flex items-center">
+      <a href="javascript:void(0)" onclick="openNav()">
+        <div class="flex items-baseline menu-button">
+          <span class="h5 blue">Menu</span>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div id="mobile-nav" class="mobile-nav md-hide lg-hide">
+  <ul class="list-reset">
+    <a href="javascript:void(0)" onclick="closeNav()">
+      <li class="close-button">
+        &times; close menu
+      </li>
+    </a>
+    <a href="#">
+      <li class="action-button">
+        Book Now
+      </li>
+    </a>
+    <a href="#">
+      <li>
+        Room Types
+      </li>
+    </a>
+    <a href="#">
+      <li>
+        What We Do
+      </li>
+    </a>
+    <a href="#">
+      <li>
+        Contact Us
+      </li>
+    </a>
+  </ul>
+</div>
+<div id="menu-overlay"></div>
+
+<script type="text/javascript">
+  function openNav() {
+    document.getElementById("mobile-nav").style.width = '75%';
+    document.getElementById("menu-overlay").style.display = 'block';
+  }
+
+  function closeNav() {
+    document.getElementById("mobile-nav").style.width = 0;
+    document.getElementById("menu-overlay").style.display = 'none';
+  }
+</script>

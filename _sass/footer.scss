@@ -1,0 +1,16 @@
+@import "variables";
+
+footer {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  border-top: solid thin #eee;
+
+  .outer-container {
+    background: white;
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 1em;
+  }
+}

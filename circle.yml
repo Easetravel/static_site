@@ -1,0 +1,27 @@
+machine:
+  ruby:
+    version: 2.4.1
+
+checkout:
+  post:
+    - bundle install
+    - bundle exec jekyll build
+
+test:
+  post:
+    - echo 'deploying...'
+
+# Customize deployment commands
+deployment:
+  staging:
+    branch: master
+    commands:
+      # - aws s3 sync ./_site s3://staging.organizefor.org --delete
+      # - aws configure set preview.cloudfront true
+      # - aws cloudfront create-invalidation --distribution-id E3GIFALXQW62ZZ --paths '/*'
+  production:
+    branch: production
+    commands:
+      # - aws s3 sync ./_site s3://www.organizefor.org --delete
+      # - aws configure set preview.cloudfront true
+      # - aws cloudfront create-invalidation --distribution-id E27P066JRNIRPA --paths '/*'
